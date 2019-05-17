@@ -1,0 +1,214 @@
+/*kék color: #493072;*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+
+@font-face {
+    font-family: 'TT';
+    src: url(assets/fonts/TTRegular.otf);
+    src: url(assets/fonts/TTMedium.otf);
+    src: url(assets/fonts/TTDemiBold.otf);
+    src: url(assets/fonts/TTBold.otf);
+    }
+
+body {
+    min-height: 75rem; 
+    font-family: 'TT', sans-serif;
+}
+
+.mr-10 {
+    margin-right: 10rem;
+}
+
+.my-6 {
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+}
+
+.my-9 {
+    margin-top : -10rem;
+    margin-bottom : 25rem;
+    
+}
+
+.my-10 {
+    padding-top : 0rem;
+    padding-bottom : 8rem;
+    margin-bottom : 10rem;
+}
+
+.my-12 {
+    padding-top : 9rem;
+    padding-bottom : 8rem;
+}
+
+.ml-10 {
+    margin-left: 10rem;
+}
+
+.headerlogo {
+    width: 95%;
+}
+
+a.nav-link {
+    color:#493072 !important; 
+} 
+a.nav-link:hover {
+    color:#714bb0 !important; 
+    text-decoration:none !important; 
+} 
+
+.download {
+    border-radius: 40px;
+    padding: 1rem 3rem;
+}
+
+.section {
+    overflow: hidden;
+  }
+  
+.image {
+    position: absolute;
+}
+.right {
+    left: 40%;  
+}
+
+.left {
+    right: 60%;
+}
+
+.jumbotron {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.purple{
+    color:#493072
+}
+
+.grey {
+    color:#666666;
+}
+
+.pink {
+    color:#f081a1;;
+}
+
+.pink-btn {
+    background-color: #f081a1;
+    color:white;
+}
+
+.black-btn {
+    color: #252525;
+}
+
+.white {
+    fill: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#carousel {
+    position: relative;
+    height: 600px;
+
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+#carousel div img {
+    width: 400px;
+    transition: width 1s;
+}
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+    width: 200px;
+}
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+    width: 200px;
+}
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+    width: 300px;
+}
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+    width: 200px;
+}
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+    width: 300px;
+}
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+    width: 200px;
+}
